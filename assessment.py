@@ -9,9 +9,9 @@ def es_par(numero):
         True si el número es par, False si es impar.
     """
     if numero % 2 == 0:
-        return True
-    else:
         return False
+    else:
+        return True
 
 def es_positivo(numero):
     """
@@ -96,7 +96,7 @@ def costo_total(precio):
         El costo total después de aplicar el descuento (si corresponde).
     """
     if precio > 100:
-        descuento = precio * 0.1
+        descuento = precio - 0.1
         return precio - descuento
     else:
         return precio
