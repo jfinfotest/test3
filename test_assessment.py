@@ -1,5 +1,5 @@
 import unittest
-from incomplete_functions import * # Importa todas las funciones
+import assessment  # Asegúrate de que assessment.py exista y sea importable
 
 
 class TestFunctions(unittest.TestCase):
@@ -114,3 +114,7 @@ class TestFunctions(unittest.TestCase):
     def test_mcd(self):
         self.assertEqual(mcd(12, 18), 6)
         self.assertEqual(mcd(48, 180), 12)
+
+# Esto es crucial para que unittest funcione.  De lo contrario, no se ejecutará nada.
+if __name__ == '__main__':
+    unittest.main()
